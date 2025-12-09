@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Modern Website | Netlify Ready</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Elegant<span>Web</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Create <span class="highlight">Stunning</span> Websites</h1>
+            <p class="subtitle">A fully responsive, modern website template built with pure HTML, CSS, and JavaScript. Perfect for Netlify deployment!</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" id="getStartedBtn">
+                    <i class="fas fa-rocket"></i> Get Started
+                </button>
+                <button class="btn-secondary" id="viewDemoBtn">
+                    <i class="fas fa-eye"></i> View Demo
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" id="visitorCount">0</span>
+                    <span class="stat-label">Visitors Today</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="projectCount">12</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="codeLines">8500</span>
+                    <span class="stat-label">Lines of Code</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card" id="floatingCard1">
+                <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Clean Code</h3>
+                <p>Pure HTML/CSS/JS</p>
+            </div>
+            <div class="floating-card" id="floatingCard2">
+                <div class="card-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Fast Loading</h3>
+                <p>Optimized Performance</p>
+            </div>
+            <div class="floating-card" id="floatingCard3">
+                <div class="card-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Responsive</h3>
+                <p>All Devices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Amazing <span>Features</span></h2>
+            <p class="section-subtitle">Everything you need for a modern website</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Modern Design</h3>
+                    <p>Clean, elegant design with smooth animations and transitions that create an engaging user experience.</p>
+                    <button class="feature-btn">Learn More</button>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>Looks perfect on all devices from mobile phones to desktop computers with adaptive layouts.</p>
+                    <button class="feature-btn">Learn More</button>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Performance</h3>
+                    <p>Optimized code and assets ensure lightning-fast loading times and smooth interactions.</p>
+                    <button class="feature-btn">Learn More</button>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-toggle-on"></i>
+                    </div>
+                    <h3>Dark/Light Mode</h3>
+                    <p>Toggle between dark and light themes with persistent preference saving using localStorage.</p>
+                    <button class="feature-btn">Try It</button>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Netlify Ready</h3>
+                    <p>Deploy instantly on Netlify with zero configuration. No backend server needed!</p>
+                    <button class="feature-btn">Deploy Guide</button>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Open Source</h3>
+                    <p>Fully customizable code that you can modify and extend for your specific needs.</p>
+                    <button class="feature-btn">View Code</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="demo-section" id="about">
+        <div class="container">
+            <h2 class="section-title">Interactive <span>Demo</span></h2>
+            <p class="section-subtitle">Try out our interactive features</p>
+            
+            <div class="demo-container">
+                <div class="demo-card">
+                    <h3><i class="fas fa-user-plus"></i> Visitor Counter</h3>
+                    <div class="counter-display">
+                        <span id="demoCounter">0</span>
+                    </div>
+                    <button class="btn-primary" id="incrementBtn">
+                        <i class="fas fa-plus"></i> Add Visitor
+                    </button>
+                    <button class="btn-secondary" id="resetCounterBtn">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+                
+                <div class="demo-card">
+                    <h3><i class="fas fa-clock"></i> Real-time Clock</h3>
+                    <div class="clock-display">
+                        <span id="realTimeClock">--:--:--</span>
+                    </div>
+                    <p id="currentDate">Loading date...</p>
+                    <div class="timezone-selector">
+                        <label for="timezoneSelect">Timezone:</label>
+                        <select id="timezoneSelect">
+                            <option value="local">Local Time</option>
+                            <option value="utc">UTC</option>
+                            <option value="est">EST</option>
+                            <option value="pst">PST</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="demo-card">
+                    <h3><i class="fas fa-comment-dots"></i> Message Board</h3>
+                    <div class="message-board">
+                        <div class="messages-list" id="messagesList">
+                            <div class="message">Welcome to our demo! 👋</div>
+                            <div class="message">Try adding a message below!</div>
+                        </div>
+                        <div class="message-input">
+                            <input type="text" id="messageInput" placeholder="Type your message...">
+                            <button id="sendMessageBtn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div class="message-info">
+                            <span id="messageCount">2 messages</span>
+                            <button id="clearMessagesBtn">Clear All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Design <span>Gallery</span></h2>
+            <p class="section-subtitle">Visual inspiration for your projects</p>
+            
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #6c63ff, #8a84ff);">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Modern Dashboard</h3>
+                    <p>Clean admin panel design</p>
+                </div>
+                
+                <div class="gallery-item" data-category="mobile">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #ff6584, #ff8fa3);">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App UI</h3>
+                    <p>iOS & Android design</p>
+                </div>
+                
+                <div class="gallery-item" data-category="ui">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #36d1dc, #5b86e5);">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI Components</h3>
+                    <p>Reusable elements</p>
+                </div>
+                
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #ff9a9e, #fad0c4);">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce</h3>
+                    <p>Online store design</p>
+                </div>
+                
+                <div class="gallery-item" data-category="mobile">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #a8edea, #fed6e3);">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Health App</h3>
+                    <p>Fitness tracking UI</p>
+                </div>
+                
+                <div class="gallery-item" data-category="ui">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Data visualization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@elegantweb.dev</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="nameInput" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="emailInput" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="messageTextarea" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        
+                        <div id="formResponse"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#" class="logo">Elegant<span>Web</span></a>
+                    <p>Creating beautiful, responsive websites with pure HTML, CSS, and JavaScript. Perfect for Netlify deployment.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#about">Demo</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="#" id="viewSourceBtn">View Source</a>
+                    <a href="#" id="netlifyGuideBtn">Netlify Guide</a>
+                    <a href="#" id="docsBtn">Documentation</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletterEmail" placeholder="Your email">
+                        <button id="subscribeBtn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> ElegantWeb. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart" style="color: #ff6584;"></i> for the web community</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Loading beautiful experience...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
